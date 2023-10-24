@@ -1,0 +1,25 @@
+server:
+  port: 3000
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.auth0.example: TRACE
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: hve0tkwWDL13UrHIY1ZCcx8bclgtCQ4I
+            client-secret: pr4ZkJO-SaNJh7a2FQ-685m9tW7s_jvGyfwdCRChl91ADcXlxSf_YiB7sa1fidSC
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+            # trailing slash is important!
+            issuer-uri: https://dev-zawminhtoon.jp.auth0.com/
